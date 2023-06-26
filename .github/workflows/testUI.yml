@@ -18,4 +18,4 @@ jobs:
         with:
           arg-spec: 'test.yml:android-pixel-4'
         env:
-          SERVICE_ACCOUNT: ${{ secrets.FIREBASE_ACCOUNT }}
+          SERVICE_ACCOUNT: ${{ secrets.FIREBASE_TOKEN }}
