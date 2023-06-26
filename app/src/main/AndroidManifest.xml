@@ -19,14 +19,6 @@
             <meta-data android:name="android.app.lib_name" android:value="" />
         </activity>
 
-        <instrumentation
-            android:name="androidx.test.runner.AndroidJUnitRunner"
-            android:targetPackage="com.example.myapplication">
-
-            <meta-data
-                android:name="screenCaptureProcessors"
-                android:value="com.google.firebase.testlab.screenshot.FirebaseScreenCaptureProcessor" />
-        </instrumentation>
     </application>
 
 </manifest>
