@@ -25,12 +25,9 @@ jobs:
       - name: Build Docker image
         run: docker build -t android-sdk-image -f Dockerfile .
 
-      - name: Run SonarQube scan
+      - name: Run App with Dockerimage
         run: |
           docker run \
             -v ${{ github.workspace }}:/app \
-            -w /app \
-            -e SONAR_TOKEN \
-            -e SONAR_HOST_URL \
-            android-sdk-image \
-            ./gradlew sonarqube
+            -w /app \android-sdk-image \
+            ./gradlew build
