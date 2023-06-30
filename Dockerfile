@@ -7,5 +7,3 @@ WORKDIR /app
 COPY . /app
 
 RUN apt-get update && apt-get install -y
-
-ENV ANDROID_HOME=/opt/android-sdk
